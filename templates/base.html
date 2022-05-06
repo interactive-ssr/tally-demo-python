@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Tally Demo</title>
+  </head>
+  <body>
+    <h1>Tally</h1>
+    <button onclick="rr(this)" action="addx">+</button>
+    <button onclick="rr(this)" action="subx">-</button>
+    <ul>
+    {% for n in range(1, tally+1) %}
+    <li>{{ n }}</li>
+    {% endfor %}
+    </ul>
+  </body>
+</html>
